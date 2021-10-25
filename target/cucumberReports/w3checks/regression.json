@@ -1,0 +1,139 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-10-22T21:56:07.867Z",
+        "line": 8,
+        "name": "W3Page console error verifications",
+        "description": "",
+        "id": "validations-of-pages-on-the-w3-site;w3page-console-error-verifications;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.NoSuchMethodError: \u0027java.util.stream.Collector com.google.common.collect.ImmutableList.toImmutableList()\u0027\n\tat org.openqa.selenium.chrome.ChromeOptions.asMap(ChromeOptions.java:292)\n\tat org.openqa.selenium.remote.NewSessionPayload.create(NewSessionPayload.java:94)\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:131)\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:181)\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:168)\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:123)\n\tat core.driver.DriversFactory.getDriver(DriversFactory.java:36)\n\tat page.W3PageObject.\u003cinit\u003e(W3PageObject.java:19)\n\tat steps.W3Steps.aUserNavigatesToPage(W3Steps.java:18)\n\tat ✽.A user navigates to page \"https://www.w3.org/standards/badpage\"(file:///Users/aaron.daly/teckro/w3checks/src/test/resources/features/w3Tests.feature:4)\n",
+              "duration": 1613465000,
+              "status": "failed"
+            },
+            "line": 4,
+            "name": "A user navigates to page \"https://www.w3.org/standards/badpage\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://www.w3.org/standards/badpage",
+                  "offset": 26
+                }
+              ],
+              "location": "steps.W3Steps.aUserNavigatesToPage(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 744000,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "user checks for console errors",
+            "match": {
+              "location": "steps.W3Steps.checkNoErrorsInConsole()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-10-22T21:56:09.809Z",
+        "line": 9,
+        "name": "W3Page console error verifications",
+        "description": "",
+        "id": "validations-of-pages-on-the-w3-site;w3page-console-error-verifications;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.NoSuchMethodError: \u0027java.util.stream.Collector com.google.common.collect.ImmutableList.toImmutableList()\u0027\n\tat org.openqa.selenium.chrome.ChromeOptions.asMap(ChromeOptions.java:292)\n\tat org.openqa.selenium.remote.NewSessionPayload.create(NewSessionPayload.java:94)\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:131)\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:181)\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:168)\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:123)\n\tat core.driver.DriversFactory.getDriver(DriversFactory.java:36)\n\tat page.W3PageObject.\u003cinit\u003e(W3PageObject.java:19)\n\tat steps.W3Steps.aUserNavigatesToPage(W3Steps.java:18)\n\tat ✽.A user navigates to page \"https://www.w3.org/standards/webofdevices/multimodal\"(file:///Users/aaron.daly/teckro/w3checks/src/test/resources/features/w3Tests.feature:4)\n",
+              "duration": 138228000,
+              "status": "failed"
+            },
+            "line": 4,
+            "name": "A user navigates to page \"https://www.w3.org/standards/webofdevices/multimodal\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://www.w3.org/standards/webofdevices/multimodal",
+                  "offset": 26
+                }
+              ],
+              "location": "steps.W3Steps.aUserNavigatesToPage(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 423000,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "user checks for console errors",
+            "match": {
+              "location": "steps.W3Steps.checkNoErrorsInConsole()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-10-22T21:56:09.971Z",
+        "line": 10,
+        "name": "W3Page console error verifications",
+        "description": "",
+        "id": "validations-of-pages-on-the-w3-site;w3page-console-error-verifications;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.NoSuchMethodError: \u0027java.util.stream.Collector com.google.common.collect.ImmutableList.toImmutableList()\u0027\n\tat org.openqa.selenium.chrome.ChromeOptions.asMap(ChromeOptions.java:292)\n\tat org.openqa.selenium.remote.NewSessionPayload.create(NewSessionPayload.java:94)\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:131)\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:181)\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:168)\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:123)\n\tat core.driver.DriversFactory.getDriver(DriversFactory.java:36)\n\tat page.W3PageObject.\u003cinit\u003e(W3PageObject.java:19)\n\tat steps.W3Steps.aUserNavigatesToPage(W3Steps.java:18)\n\tat ✽.A user navigates to page \"https://www.w3.org/standards/webdesign/htmlcss\"(file:///Users/aaron.daly/teckro/w3checks/src/test/resources/features/w3Tests.feature:4)\n",
+              "duration": 130347000,
+              "status": "failed"
+            },
+            "line": 4,
+            "name": "A user navigates to page \"https://www.w3.org/standards/webdesign/htmlcss\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://www.w3.org/standards/webdesign/htmlcss",
+                  "offset": 26
+                }
+              ],
+              "location": "steps.W3Steps.aUserNavigatesToPage(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 468000,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "user checks for console errors",
+            "match": {
+              "location": "steps.W3Steps.checkNoErrorsInConsole()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Validations of pages on the w3 site",
+    "description": "",
+    "id": "validations-of-pages-on-the-w3-site",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/w3Tests.feature",
+    "tags": []
+  }
+]

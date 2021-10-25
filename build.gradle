@@ -1,0 +1,42 @@
+plugins {
+    id 'java'
+}
+
+group 'sample-tests'
+version '1.0-SNAPSHOT'
+sourceCompatibility = JavaVersion.VERSION_11
+targetCompatibility = JavaVersion.VERSION_11
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile(
+            'org.seleniumhq.selenium:selenium-api:3.141.59',
+            'ru.yandex.qatools.htmlelements:htmlelements-all:1.20.0',
+            'org.testng:testng:6.14.3',
+            'io.github.bonigarcia:webdrivermanager:4.2.2',
+            'io.cucumber:cucumber-java:7.0.0',
+            'io.cucumber:cucumber-junit:7.0.0'
+    )
+}
+
+configurations {
+    cucumberRuntime {
+        extendsFrom testImplementation
+    }
+}
+
+task cucumber(type: Test) {
+    dependsOn assemble, testClasses
+    systemProperties System.properties
+
+    doLast {
+        javaexec {
+            main = "io.cucumber.core.cli.Main"
+            classpath = configurations.cucumberRuntime + sourceSets.main.output + sourceSets.test.output
+            args = ['--plugin', 'pretty', '--glue', 'com.steps', 'src/test/resources/features/']
+        }
+    }
+    }

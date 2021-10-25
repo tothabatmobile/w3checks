@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="9" time="111.245">
+<testcase classname="Validations of pages on the w3 site" name="W3Page console error verifications" time="4.492">
+<system-out><![CDATA[Given A user navigates to page "https://www.w3.org/standards/badpage".......passed
+Then user checks for console errors.........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Validations of pages on the w3 site" name="W3Page console error verifications 2" time="3.181">
+<system-out><![CDATA[Given A user navigates to page "https://www.w3.org/standards/webofdevices/multimodal".passed
+Then user checks for console errors.........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Validations of pages on the w3 site" name="W3Page console error verifications 3" time="3.103">
+<system-out><![CDATA[Given A user navigates to page "https://www.w3.org/standards/webdesign/htmlcss".passed
+Then user checks for console errors.........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Validations of pages on the w3 site" name="W3Page response codes verifications" time="3.781">
+<failure message="Response Code should be 200 but was: 404 expected [200] but found [404]" type="java.lang.AssertionError"><![CDATA[Given A user navigates to page "https://www.w3.org/standards/badpage".......passed
+Then the user checks response is okay.......................................failed
+
+StackTrace:
+java.lang.AssertionError: Response Code should be 200 but was: 404 expected [200] but found [404]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:652)
+	at com.steps.W3Steps.userChecksTheResponseCode(W3Steps.java:58)
+	at ✽.the user checks response is okay(file:///Users/aaron.daly/teckro/w3checks/src/test/resources/features/w3Tests.feature:14)
+]]></failure>
+</testcase>
+<testcase classname="Validations of pages on the w3 site" name="W3Page response codes verifications 2" time="3.446">
+<system-out><![CDATA[Given A user navigates to page "https://www.w3.org/standards/webofdevices/multimodal".passed
+Then the user checks response is okay.......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Validations of pages on the w3 site" name="W3Page response codes verifications 3" time="3.389">
+<system-out><![CDATA[Given A user navigates to page "https://www.w3.org/standards/webdesign/htmlcss".passed
+Then the user checks response is okay.......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Validations of pages on the w3 site" name="W3Page valid links verifications" time="22.29">
+<system-out><![CDATA[Given A user navigates to page "https://www.w3.org/standards/badpage".......passed
+Then user checks all contained links are working............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Validations of pages on the w3 site" name="W3Page valid links verifications 2" time="22.734">
+<system-out><![CDATA[Given A user navigates to page "https://www.w3.org/standards/webofdevices/multimodal".passed
+Then user checks all contained links are working............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Validations of pages on the w3 site" name="W3Page valid links verifications 3" time="44.522">
+<system-out><![CDATA[Given A user navigates to page "https://www.w3.org/standards/webdesign/htmlcss".passed
+Then user checks all contained links are working............................passed
+]]></system-out>
+</testcase>
+</testsuite>
