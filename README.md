@@ -13,20 +13,19 @@ _Dbrowser_
 There are a 2 different browser options:
 
 
-`-Dbrowser=chrome`
+`./gradlew clean cucumber -Dbrowser=chrome`
 
-`-Dbrowser=firefox`
+`./gradlew clean cucumber -Dbrowser=firefox`
 
 #### Running on Docker:
 
-To execute all tests on docker
+To execute all tests on dockerised selenium grid 
 
 `docker-compose up`
 
-`./gradlew clean cucumber -Dbrowser=firefox-docker`
-
 `./gradlew clean cucumber -Dbrowser=chrome-docker`
 
+`./gradlew clean cucumber -Dbrowser=firefox-docker`
 To shut down docker
 
 `docker-compose down`
